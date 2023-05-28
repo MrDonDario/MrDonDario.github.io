@@ -1,0 +1,178 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f5f9;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: #235789;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Sección del slider */
+.slider {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  animation: slideIn 1s ease-in-out;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.slide-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slide:hover .slide-caption {
+  opacity: 0.9;
+}
+
+.slide-caption h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.slide-caption p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.slider-controls {
+  margin-top: 20px;
+}
+
+.prev-btn, .next-btn {
+  background-color: #1c4361;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: #0a1d30;
+}
+
+/* Sección de servicios */
+.services {
+  background-color: #fff;
+  padding: 40px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.services h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.services ul {
+  list-style: disc;
+  margin-left: 40px;
+}
+
+/* Sección de contacto */
+.contact {
+  background-color: #f0f5f9;
+  padding: 40px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.contact h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Pie de página */
+footer {
+  background-color: #1c4361;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

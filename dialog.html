@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital San Basilio - Cuadros de Diálogo</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    .button-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .dialog-button {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Logo del Hospital San Basilio" width="50" height="50" class="d-inline-block align-text-top">
+          Hospital San Basilio
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="text-center my-4">Cuadros de Diálogo</h1>
+      
+      <div class="button-container">
+        <button type="button" class="btn btn-primary dialog-button" data-bs-toggle="modal" data-bs-target="#ambulanceRequestDialog">
+          Solicitar Ambulancia
+        </button>
+        <button type="button" class="btn btn-primary dialog-button" data-bs-toggle="modal" data-bs-target="#appointmentDialog">
+          Programar Cita
+        </button>
+        <button type="button" class="btn btn-primary dialog-button" data-bs-toggle="modal" data-bs-target="#labResultsDialog">
+          Consultar Resultados de Laboratorio
+        </button>
+        <button type="button" class="btn btn-primary dialog-button" data-bs-toggle="modal" data-bs-target="#generalInquiryDialog">
+          Preguntas o Consultas Generales
+        </button>
+      </div>
+
+      <!-- Cuadro de diálogo para solicitud de ambulancia -->
+      <div class="modal fade" id="ambulanceRequestDialog" tabindex="-1" aria-labelledby="ambulanceRequestDialogTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ambulanceRequestDialogTitle">Solicitud de Ambulancia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Su solicitud de ambulancia ha sido enviada. Un equipo de paramédicos se pondrá en contacto con usted a la brevedad.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuadro de diálogo para programación de citas -->
+      <div class="modal fade" id="appointmentDialog" tabindex="-1" aria-labelledby="appointmentDialogTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="appointmentDialogTitle">Programar Cita</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Su cita ha sido programada para el día 27 de mayo a las 10:00 a.m. Le esperamos en el consultorio 202.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuadro de diálogo para consulta de resultados de laboratorio -->
+      <div class="modal fade" id="labResultsDialog" tabindex="-1" aria-labelledby="labResultsDialogTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="labResultsDialogTitle">Consultar Resultados de Laboratorio</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Sus resultados de laboratorio han sido procesados. Puede acceder a ellos a través de su cuenta en línea.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuadro de diálogo para preguntas o consultas generales -->
+      <div class="modal fade" id="generalInquiryDialog" tabindex="-1" aria-labelledby="generalInquiryDialogTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="generalInquiryDialogTitle">Preguntas o Consultas Generales</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Estamos aquí para responder a todas sus preguntas y consultas. Por favor, no dude en comunicarse con nosotros a través de nuestro número de teléfono o correo electrónico.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contacto</h5>
+          <p>Dirección: 123 Calle Principal, Ciudad</p>
+          <p>Teléfono: (123) 456-7890</p>
+          <p>Email: info@hospitalsanbasilio.com</p>
+        </div>
+
+        <div class="col-md-6 text-end">
+          <p>Síguenos en las redes sociales:</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container text-center">
+        <p>&copy; 2023 Hospital San Basilio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/ee1f899eec.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

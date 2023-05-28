@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital San Basilio - Actualización de Datos</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    .update-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .update-button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Logo del Hospital San Basilio" width="50" height="50" class="d-inline-block align-text-top">
+          Hospital San Basilio
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container py-5">
+      <h1 class="text-center mb-4">Actualización de Datos</h1>
+      
+      <form class="update-form">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo">
+        </div>
+        <div class="mb-3">
+          <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+          <input type="date" class="form-control" id="fechaNacimiento">
+        </div>
+        <div class="mb-3">
+          <label for="genero" class="form-label">Género</label>
+          <select class="form-select" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu dirección de email">
+        </div>
+        <button type="submit" class="btn btn-primary update-button">Actualizar Datos</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contacto</h5>
+          <p>Dirección: 123 Calle Principal, Ciudad</p>
+          <p>Teléfono: (123) 456-7890</p>
+          <p>Email: info@hospitalsanbasilio.com</p>
+        </div>
+
+        <div class="col-md-6 text-end">
+          <p>Síguenos en las redes sociales:</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container text-center">
+        <p>&copy; 2023 Hospital San Basilio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/ee1f899eec.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

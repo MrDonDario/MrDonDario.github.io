@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital San Basilio - Agendar Citas</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    .login-button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  </head>
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="logo.png" alt="Logo del Hospital San Basilio" width="50" height="50" class="d-inline-block align-text-top">
+              Hospital San Basilio
+            </a>
+          </div>
+        </nav>
+  </header>
+
+  <main>
+    <div class="container py-5">
+      <h1 class="text-center mb-4">Agendar Citas</h1>
+      
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="phone" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="appointment-date" class="form-label">Fecha de cita</label>
+              <input type="date" class="form-control" id="appointment-date" name="appointment-date" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="department" class="form-label">Departamento</label>
+              <select class="form-select" id="department" name="department" required>
+                <option value="">Seleccionar departamento</option>
+                <option value="1">Cardiología</option>
+                <option value="2">Dermatología</option>
+                <option value="3">Ginecología</option>
+                <!-- Agrega más opciones según los departamentos del hospital -->
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="doctor" class="form-label">Doctor</label>
+              <select class="form-select" id="doctor" name="doctor" required>
+                <option value="">Seleccionar doctor</option>
+                <option value="1">Dr. Juan Pérez</option>
+                <option value="2">Dra. María García</option>
+                <option value="3">Dr. Roberto Rodríguez</option>
+                <!-- Agrega más opciones según los doctores del hospital -->
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="comments" class="form-label">Comentarios</label>
+          <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Agendar cita</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contacto</h5>
+          <p>Dirección: 123 Calle Principal, Ciudad</p>
+          <p>Teléfono: (123) 456-7890</p>
+          <p>Email: info@hospitalsanbasilio.com</p>
+        </div>
+
+        <div class="col-md-6 text-end">
+          <p>Síguenos en las redes sociales:</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container text-center">
+        <p>&copy; 2023 Hospital San Basilio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/ee1f899eec.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

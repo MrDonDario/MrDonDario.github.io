@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño de Datos de un Programa</title>
+</head>
+<body>
+  <h1>Datos del Programa</h1>
+
+  <div>
+    <h2>Nombre:</h2>
+    <p id="nombre-programa"></p>
+  </div>
+
+  <div>
+    <h2>Versión:</h2>
+    <p id="version-programa"></p>
+  </div>
+
+  <div>
+    <h2>Autor:</h2>
+    <p id="autor-programa"></p>
+  </div>
+
+  <div>
+    <h2>Descripción:</h2>
+    <p id="descripcion-programa"></p>
+  </div>
+
+  <div>
+    <h2>Categorías:</h2>
+    <ul id="categorias-programa"></ul>
+  </div>
+
+  <div>
+    <h2>Características:</h2>
+    <ul id="caracteristicas-programa"></ul>
+  </div>
+
+  <div>
+    <h2>Precio:</h2>
+    <p id="precio-programa"></p>
+  </div>
+
+  <div>
+    <h2>Fecha de Lanzamiento:</h2>
+    <p id="fecha-lanzamiento-programa"></p>
+  </div>
+
+  <div>
+    <h2>Activo:</h2>
+    <p id="activo-programa"></p>
+  </div>
+
+  <script>
+    // Datos del programa
+    const programa = {
+      nombre: "Mi Programa",
+      version: "1.0",
+      autor: "Nombre del Autor",
+      descripcion: "Descripción del programa",
+      categorias: ["Categoría 1", "Categoría 2", "Categoría 3"],
+      caracteristicas: ["Característica 1", "Característica 2", "Característica 3"],
+      precio: 19.99,
+      fechaLanzamiento: "2023-01-01",
+      activo: true
+    };
+
+    // Asignar los datos a los elementos HTML
+    document.getElementById("nombre-programa").innerText = programa.nombre;
+    document.getElementById("version-programa").innerText = programa.version;
+    document.getElementById("autor-programa").innerText = programa.autor;
+    document.getElementById("descripcion-programa").innerText = programa.descripcion;
+    document.getElementById("categorias-programa").innerHTML = programa.categorias.map(categoria => `<li>${categoria}</li>`).join("");
+    document.getElementById("caracteristicas-programa").innerHTML = programa.caracteristicas.map(caracteristica => `<li>${caracteristica}</li>`).join("");
+    document.getElementById("precio-programa").innerText = `$${programa.precio}`;
+    document.getElementById("fecha-lanzamiento-programa").innerText = programa.fechaLanzamiento;
+    document.getElementById("activo-programa").innerText = programa.activo ? "Sí" : "No";
+  </script>
+</body>
+</html>
